@@ -2,6 +2,7 @@ import cv2
 import mediapipe as mp
 import time
 import math 
+from Gestures import Gesture
 
 mp_hands = mp.solutions.hands
 mp_draw = mp.solutions.drawing_utils
@@ -25,6 +26,9 @@ while cap.isOpened():
             mp_draw.draw_landmarks(img, hanLoc, mp_hands.HAND_CONNECTIONS)
             lm = hanLoc.landmark
 
+        print(Gesture(lm))
+
+    
     cv2.imshow("Hand Tracking", img)
     
     if cv2.waitKey(1) & 0xFF == ord('q'):
