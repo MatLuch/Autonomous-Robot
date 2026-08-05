@@ -29,8 +29,9 @@ Gesture controls:
 * ESP32 microcontroller
 * 4 DC motors
 * 2 L293D motor drivers
-* Robot chassis
+* Robot chassis: 3d printed
 * Motor power supply
+* wires
 
 ### Control System
 
@@ -69,13 +70,14 @@ L293D Motor Drivers
 
 ## Software
 
-Technologies used:
+Technologies and Libraries used:
 
 * Python
-* Computer Vision
-* Hand Tracking
+* Computer Vision: cv2
+* Hand Tracking: mediapipe
 * ESP32 Programming
-* WiFi Communication
+* WiFi Communication: socket
+* time librarie 
 
 ## Future Improvements
 
@@ -85,6 +87,9 @@ Technologies used:
 * Improve gesture recognition accuracy
 * Add variable speed control
 
+## notes
+
+* added premade(made by me) test codes that i will implement later in this project
 
 ## Author
 
