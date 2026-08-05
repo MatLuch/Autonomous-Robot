@@ -46,11 +46,17 @@ while cap.isOpened():
     command = "none"
 
     if right_hand == "Open" and left_hand == "Close":
-        command = "Right"
+        command = "right"
 
     if right_hand == "Close" and left_hand == "Open":
         command = "left"
 
+    if right_hand == "Open" and left_hand == "Open":
+        command = "forward"
+
+    if right_hand == "Close" and left_hand == "Close":
+        command = "backward"
+        
     print(command)
 
     
