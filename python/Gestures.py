@@ -1,13 +1,13 @@
 def Gesture(lm):
 
-    def Forward(lm):
+    def Open(lm):
         if lm[8].y < lm[6].y and lm[12].y < lm[10].y and lm[16].y < lm[14].y and lm[20].y < lm[18].y:
-            return "forward"
+            return "Open"
         return "none"
 
-    def Stop(lm):
+    def Close(lm):
         if lm[8].y > lm[6].y and lm[12].y > lm[10].y and lm[16].y > lm[14].y and lm[20].y > lm[18].y:
-            return "Stop"
+            return "Close"
         return "none"
 
     # def Left(lm):
@@ -21,8 +21,8 @@ def Gesture(lm):
     #     return "none"
 
     gestures = [
-        Forward(lm),
-        Stop(lm)
+        Open(lm),
+        Close(lm)
         # Left(lm),
         # Right(lm)
     ]
