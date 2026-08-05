@@ -89,6 +89,3 @@ Technologies used:
 ## Author
 
 Mateo Luchian
-
-```
-```
