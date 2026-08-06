@@ -3,7 +3,7 @@ import mediapipe as mp
 import time
 import math 
 from Gestures import Gesture
-
+from socketTransmit import transmit
 mp_hands = mp.solutions.hands
 mp_draw = mp.solutions.drawing_utils
 hands = mp_hands.Hands(max_num_hands=2, min_detection_confidence=0.7)
@@ -58,7 +58,7 @@ while cap.isOpened():
         command = "backward"
         
     print(command)
-
+    transmit(str(command))
     
     cv2.imshow("Hand Tracking", img)
     

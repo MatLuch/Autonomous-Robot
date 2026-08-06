@@ -1,6 +1,6 @@
 import socket
 
-ESP32_IP = "192.168.2.233"
+ESP32_IP = "YourEsp32Ip"
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 while True:

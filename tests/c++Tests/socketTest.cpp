@@ -1,8 +1,8 @@
 #include <WiFi.h>
 #include <WiFiUdp.h>
 
-const char* ssid = "BELL750";
-const char* password = "Epuras10434@";
+const char* ssid = "YourSsid";
+const char* password = "YourPassword";
 WiFiUDP udp;
 
 String getPacket(int packetSize) {
